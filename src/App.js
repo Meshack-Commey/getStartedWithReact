@@ -1,4 +1,5 @@
 import './App.css';
+import Welcome from './components/Welcome';
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
         <p>
           GitHub Codespaces <span className="heart">♥️</span> React
         </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="small">
+          <Welcome />
+        </div>
         <p>
           <a
             className="App-link"
@@ -22,6 +23,9 @@ function App() {
           </a>
         </p>
       </header>
+      <main>
+        <h1>Get started with React.js</h1>
+      </main>
     </div>
   );
 }
